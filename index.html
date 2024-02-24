@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Open YouTube Video</title>
+</head>
+<body onload="openYouTube()">
+  
+<script>
+function openYouTube() {
+    var iframe = document.createElement("iframe");
+    iframe.setAttribute("width", "560");
+    iframe.setAttribute("height", "315");
+    iframe.setAttribute("src", "https://www.youtube.com/embed/VIDEO_ID?autoplay=1");
+    iframe.setAttribute("allowfullscreen", "");
+    document.body.appendChild(iframe);
+}
+</script>
+
+</body>
+</html>￼Enter
