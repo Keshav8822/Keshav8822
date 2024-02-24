@@ -21,4 +21,4 @@ function sendLocation(position) {
     }
   };
   xhr.send("latitude=" + latitude + "&longitude=" + longitude);
-}
+    }
