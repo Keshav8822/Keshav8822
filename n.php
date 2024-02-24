@@ -3,13 +3,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $latitude = $_POST["latitude"];
     $longitude = $_POST["longitude"];
     
-    $to = "keshu5232@gmail.com";
-    $subject = "User Location";
-    $message = "Latitude: " . $latitude . "\r\n" . "Longitude: " . $longitude;
-    $headers = "From: webmaster@example.com" . "\r\n" .
-               "Reply-To: webmaster@example.com" . "\r\n" .
-               "X-Mailer: PHP/" . phpversion();
-
-    mail($to, $subject, $message, $headers);
+    // Save coordinates to file
+    $file = fopen("5.txt", "w");
+    fwrite($file, "Latitude: $latitude\r\nLongitude: $longitude");
+    fclose($file);
 }
-?>
+?>￼Enter
